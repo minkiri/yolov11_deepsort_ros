@@ -1,0 +1,12 @@
+<launch>
+    <!-- ROS 기본 Python 환경 사용 -->
+    <env name="PATH" value="/usr/bin:/bin:/usr/local/bin" />
+    <env name="PYTHONPATH" value="/opt/ros/noetic/lib/python3/dist-packages" />
+    <env name="LD_LIBRARY_PATH" value="/opt/ros/noetic/lib:/usr/lib:/usr/local/lib" />
+
+    <!-- Node to run the YOLOv11 + DeepSORT script -->
+    <node name="yolov11_deepsort_node" pkg="yolov11_deepsort" type="yolov11_deepsort.py" output="screen">
+        <param name="use_sim_time" value="false"/>
+    </node>
+</launch>
+
