@@ -10,3 +10,7 @@
     - `conda env create -f yolov11d.yaml`
 
 <br>
+
+**Computer Performance**
+- Intel core i7
+- NVIDIA GeForce 3050Ti laptop, 8GB
